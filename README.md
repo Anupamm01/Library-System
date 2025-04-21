@@ -1,4 +1,4 @@
-📚 Library Management System (Python CLI)
+#📚 Library Management System (Python CLI)
 This is a menu-driven Python application that simulates a simple Library Management System using the principles of Object-Oriented Programming (OOP) such as:
 
 Class & Instance Attributes
@@ -9,7 +9,7 @@ Class Methods
 
 Exception Handling
 
-🚀 Features
+##🚀 Features
 View all available books in the library
 
 Borrow a book by its ID (if available)
@@ -24,7 +24,7 @@ Borrowing an already borrowed book
 
 Returning a book that hasn't been borrowed
 
-🧱 Class Structure
+##🧱 Class Structure
 Library Class
 Class Attribute: __book_list (Private list of all book objects)
 

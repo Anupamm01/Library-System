@@ -26,12 +26,6 @@ A simple, menu-driven **command-line application** in Python that demonstrates *
   - `view_all_books()` – Displays all available books
   - `find_book_by_id(id)` – Finds a book by its ID
 
-### 📘 `Book` Class *(inherits from Library)*
-- **Protected Attributes:**
-  - `_book_id`, `_book_title`, `_book_author`, `_book_availability`
-- **Methods:**
-  - `borrow_book()` – Checks and borrows the book
-  - `return_book()` – Returns the book to the library
-  - `view_book_info()` – Displays book information
+
 
 ---

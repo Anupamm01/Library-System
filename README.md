@@ -1,54 +1,37 @@
-#📚 Library Management System (Python CLI)
-This is a menu-driven Python application that simulates a simple Library Management System using the principles of Object-Oriented Programming (OOP) such as:
+# 📚 Library Management System (Python CLI)
 
-Class & Instance Attributes
+A simple, menu-driven **command-line application** in Python that demonstrates **Object-Oriented Programming (OOP)** concepts like encapsulation, inheritance, class methods, and error handling.
 
-Encapsulation (using protected/private members)
+---
 
-Class Methods
+## 🚀 Features
 
-Exception Handling
+- ✅ View all available books in the library  
+- 📥 Borrow a book (if available)  
+- 📤 Return a borrowed book  
+- ⚠️ Handles errors like:
+  - Invalid Book ID
+  - Borrowing already borrowed books
+  - Returning a book that hasn't been borrowed  
 
-##🚀 Features
-View all available books in the library
+---
 
-Borrow a book by its ID (if available)
+## 🧱 Class Structure
 
-Return a borrowed book
+### 🏛️ `Library` Class
+- **Class Attributes:**
+  - `__book_list` – A private list storing all book objects
+- **Class Methods:**
+  - `entry_book(book)` – Adds a book to the list
+  - `view_all_books()` – Displays all available books
+  - `find_book_by_id(id)` – Finds a book by its ID
 
-Handles errors such as:
+### 📘 `Book` Class *(inherits from Library)*
+- **Protected Attributes:**
+  - `_book_id`, `_book_title`, `_book_author`, `_book_availability`
+- **Methods:**
+  - `borrow_book()` – Checks and borrows the book
+  - `return_book()` – Returns the book to the library
+  - `view_book_info()` – Displays book information
 
-Invalid book ID
-
-Borrowing an already borrowed book
-
-Returning a book that hasn't been borrowed
-
-##🧱 Class Structure
-Library Class
-Class Attribute: __book_list (Private list of all book objects)
-
-entry_book(book): Adds a new book to the list
-
-view_all_books(): Displays all books
-
-find_book_by_id(book_id): Returns a book object by ID
-
-Book Class (Inherits from Library)
-Attributes:
-
-_book_id (int)
-
-_book_title (str)
-
-_book_author (str)
-
-_book_availability (bool)
-
-Methods:
-
-borrow_book(): Sets availability to False
-
-return_book(): Sets availability to True
-
-view_book_info(): Prints book details
+---
